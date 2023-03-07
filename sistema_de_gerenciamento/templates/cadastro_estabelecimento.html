@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Estabelecimento</title>
+</head>
+<body>
+	<h1>Cadastro de Estabelecimento</h1>
+	<form method="POST">
+		{% csrf_token %}
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome">
+		<label for="endereco">Endereço:</label>
+		<input type="text" id="endereco" name="endereco">
+		<label for="telefone">Telefone:</label>
+		<input type="text" id="telefone" name="telefone">
+		<button type="submit">Salvar</button>
+	</form>
+</body>
+</html>
